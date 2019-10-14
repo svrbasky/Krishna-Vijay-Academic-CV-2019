@@ -1,0 +1,147 @@
+%------------------------------------
+% Dario Taraborelli
+% Typesetting your academic CV in LaTeX
+%
+% URL: http://nitens.org/taraborelli/cvtex
+% DISCLAIMER: This template is provided for free and without any guarantee 
+% that it will correctly compile on your system if you have a non-standard  
+% configuration.
+% Some rights reserved: http://creativecommons.org/licenses/by-sa/3.0/
+%------------------------------------
+
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec} 
+
+% DOCUMENT LAYOUT
+\usepackage{geometry} 
+\geometry{a4paper, textwidth=5.5in, textheight=8.5in, marginparsep=7pt, marginparwidth=.6in}
+\setlength\parindent{0in}
+
+% FONTS
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\defaultfontfeatures{Mapping=tex-text}
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}, Variant=01]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{Monaco}
+%%% modified by Karol Kozioł for ShareLaTeX use
+\setmainfont[
+  Ligatures={Common}, Numbers={OldStyle}, Variant=01,
+  BoldFont=LinLibertine_RB.otf,
+  ItalicFont=LinLibertine_RI.otf,
+  BoldItalicFont=LinLibertine_RBI.otf
+]{LinLibertine_R.otf}
+\setmonofont[Scale=0.8]{DejaVuSansMono.ttf}
+
+% ---- CUSTOM COMMANDS
+\chardef\&="E050
+\newcommand{\html}[1]{\href{#1}{\scriptsize\textsc{[html]}}}
+\newcommand{\pdf}[1]{\href{#1}{\scriptsize\textsc{[pdf]}}}
+\newcommand{\doi}[1]{\href{#1}{\scriptsize\textsc{[doi]}}}
+% ---- MARGIN YEARS
+\usepackage{marginnote}
+\newcommand{\amper{}}{\chardef\amper="E0BD }
+\newcommand{\years}[1]{\marginnote{\scriptsize #1}}
+\renewcommand*{\raggedleftmarginnote}{}
+\setlength{\marginparsep}{7pt}
+\reversemarginpar
+
+% HEADINGS
+\usepackage{sectsty} 
+\usepackage[normalem]{ulem} 
+\sectionfont{\mdseries\upshape\Large}
+\subsectionfont{\mdseries\scshape\normalsize} 
+\subsubsectionfont{\mdseries\upshape\large} 
+
+% PDF SETUP
+% ---- FILL IN HERE THE DOC TITLE AND AUTHOR
+\usepackage[%dvipdfm, 
+bookmarks, colorlinks, breaklinks, 
+% ---- FILL IN HERE THE TITLE AND AUTHOR
+	pdftitle={Krishna Vijay Samayamantri - vita},
+	pdfauthor={My name},
+	pdfproducer={http://nitens.org/taraborelli/cvtex}
+]{hyperref}  
+\hypersetup{linkcolor=blue,citecolor=blue,filecolor=black,urlcolor=MidnightBlue} 
+
+% DOCUMENT
+\begin{document}
+{\LARGE Krishna Vijay Samayamantri}\\[1cm]
+ Los Angeles\\
+U.S.A.\\[.2cm]
+Phone: \texttt{702-722-4071}\\
+email: \href{mailto:svrbasky@gmail.com}{svrbasky@gmail.com}\\
+\textsc{url}: \href{http://krishnavijaysamayamantri.com}{http://krishnavijaysamayamantri.com}\\
+LinkedIn: \href{https://linkedin.com/in/svrkrishnavijay/}{https://linkedin.com/in/svrkrishnavijay/}
+\vfill
+ Born:  January 2, 1990---Kakinada, India\\
+Nationality: Indian
+
+%%\hrule
+\section*{Current position}
+\emph{Research Intern}, Department of Kinesiology, Cal State LA
+
+%%\hrule
+\section*{Areas of specialization}
+Biomedical Engineering • Image Processing • Signal Processing • Machine Learning • Medical Diagnostics • Human Machine Interface • Data Analysis
+
+%%\hrule
+\section*{Appointments held}
+\noindent
+\years{2017-2019}California State University, Los Angeles\\
+\years{2015-2016}Krishna Vijay Technologies, Hyderabad, India\\
+\years{2012-2013}Central Electronics Engineering Research Institute (CEERI), Chennai, India
+
+
+%\hrule
+\section*{Education}
+\noindent
+\years{2019}\textsc{M.S.} in Electrical Engineering (Biomedical Engineerign Specialization), Cal State LA, USA\\
+\years{2013}\textsc{B.E.(hon.)} in Electrical and Electronics Engineering, BITS - Pilani, India
+
+%\hrule
+\section*{Accomplishments}
+\noindent
+\years{Oct 2016}Third prize in BioHackLA Hackathon conducted at Cal State LA\\
+\years{2018}Honor's convocation\\
+\years{2018}Member of Golden Key Honor Society
+
+\section*{Publications}
+
+\subsection*{Conference Papers}
+\noindent
+\years{2013} Vijay, S. K., Lella, A. V., Paul, N. S., Prakash, J. S., Venkatraman, V., Morey, G., \& Pesala, B. (2013, September). Classification of data obtained from portable ECG devices using support vector machines. In 2013 International Conference on Advanced Electronic Systems (ICAES) (pp. 235-237). IEEE.
+
+% \subsection*{Journal articles}
+
+% \subsection*{Books}
+
+% \subsection*{Newspaper articles}
+
+
+\section*{Teaching}
+
+...
+
+%\hrule
+\section*{Service to the profession}
+
+...
+%\vspace{1cm}
+\vfill{}
+%\hrulefill
+
+\begin{center}
+{\scriptsize  Last updated: \today\- •\- 
+% ---- PLEASE LEAVE THIS BACKLINK FOR ATTRIBUTION AS PER CC-LICENSE
+Typeset in \href{http://nitens.org/taraborelli/cvtex}{
+\fontspec{Times New Roman}
+\XeTeX }\\
+% ---- FILL IN THE FULL URL TO YOUR CV HERE
+\href{https://krishnavijaysamayamantri.com}{https://krishnavijaysamayamantri.com}}
+\end{center}
+
+\end{document}
